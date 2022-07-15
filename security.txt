@@ -1,0 +1,8 @@
+passive and active attack
+in passive attack there is no modification of message just reading
+active attacks involve some modification of the data stream or the creation of a false stream
+
+examples of active attack
+masquerade
+replay
+modifcation of messages

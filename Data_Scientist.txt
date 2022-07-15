@@ -1,8 +1,0 @@
-How to become a Data Scientist
-Gain database knowledge
-learn statistics, probability and mathematical analysis
-master atleast one programming language like python, R, SAS
-learn data wrangling to successfully clean, manipulate and analyze data( master concepts of machine learning and deep learning )
-develop working knowledge of big data tools such as tableau and power BI
-
-

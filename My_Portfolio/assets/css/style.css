@@ -519,9 +519,256 @@ input {
 
 /*=============== Testimonials ===============*/
 
+.testimonial__bg {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+
+}
+
+.testimonial__bg::before {
+  content: '';
+  background: var(--linear-gradient);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.testimonial__icon {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-color);
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  padding-top: 2.75rem;
+  text-align: center;
+}
+
+.testimonial__container {
+  padding-top: 5rem;
+  padding-bottom: 7.8rem;
+}
+
+.testimonial__item {
+  padding: 0 5.75rem;
+}
+
+.testimonial__description,
+.author__project,
+.author__name {
+  color: #fff;
+}
+
+.author__name {
+  text-transform: uppercase;
+  margin-bottom: 0.56em;
+  font-weight: 400;
+}
+
+.author__project{
+  font-style: italic;
+  opacity: 0.7;
+  margin-bottom: 1.25em;
+}
+
+.testimonial__description {
+  text-align: justify;
+}
+
+.ruler {
+  width: 100%;
+  height: 1px;
+  background-color: #a98a79;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 3.25rem;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+  margin: 0 3px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 /*=============== Blog ===============*/
 
+.posts__container {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.post__content {
+  border: 1px solid var(--border-color);
+  padding: 1.25rem 1.875 rem 2.5rem 1.25rem;
+}
+
+.post__img {
+  vertical-align: middle;
+}
+
+.post__date {
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 0.8em;
+}
+
+.post__title {
+  margin-bottom: 1.1em;
+}
+
+.post__description {
+  color: var(--text-color);
+  text-align: justify;
+}
+
 /*=============== Contact ===============*/
+.contact {
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  background: var(--linear-gradient);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.contact__content {
+  z-index: 10;
+  position: relative;
+}
+
+.contact__container {
+  grid-template-columns: 4fr 5fr 3fr;
+  column-gap: 1.875rem;
+  padding-top: 1.25rem;
+}
+
+.contact .section__title,
+.contact__list,
+.contact__social-link,
+::placeholder,
+.contact__input,
+.contact__form-title,
+.footer__copy {
+  color: #fff;
+  font-family: var(--mono-font);
+}
+
+.contact__list {
+  margin-bottom: 3.25rem;
+}
+
+.contact__list dt {
+  float: left;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+}
+
+.contact__list dd {
+  padding-left: 6.25em;
+  margin-bottom: 0.94em;
+}
+
+.contact__socials li {
+  margin-bottom: 0.75rem;
+  font-family: var(--roboto-font);
+}
+
+.contact__social-link {
+  font-family: var(--roboto-font);
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__form-title {
+  margin-bottom: 1.25em;
+}
+
+.contact__input-div {
+  margin-bottom: 0.9em;
+}
+
+.contact__input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 0.625rem;
+}
+
+.textarea {
+  height: 7.2rem;
+  resize: none;
+}
+
+.contact__input:Focus {
+  box-shadow: inset 0 0 5px 0 #fff;
+}
+
+.contact__message {
+  position: absolute;
+  bottom: 33%;
+  left: 0;
+  font-family: var(--mono-font);
+  color: #fff;
+}
+
+.color-light {
+  opacity: 1;
+}
+
+.color-dark {
+  opacity: 0.4;
+}
+
+.contact__button {
+  margin-top: 1.875rem;
+  width: 100%;
+  box-shadow: 0 1px 29px rgb(0, 0, 0 /40%);
+}
+
+.contact__input-div {
+  margin-bottom: 0.94em;
+}
+
+
+.footer__copy {
+  opacity: 0.4;
+  margin-top: 3.75rem;
+
+}
 
 /*=============== Blog Details ===============*/
 

@@ -55,7 +55,7 @@ const sendEmail = (e) => {
             contactMessage.textContent = 'write all the input fields';
         } else {
             // serviceId -templateId - #form - publickey
-            emailjs.sendForm('service_paca217','template_tiocjpn','#contact-form','vxDcl4UI2jb0QBn6f')
+            emailjs.sendForm('service_joitybh','template_cn8w3cd','#contact-form','wUCL3FFd0keoiS5KO')
 
             .then(() => {
                 // show message and add color, window + dot to open emoji
@@ -66,7 +66,8 @@ const sendEmail = (e) => {
                 setTimeout(() => {
                     contactMessage.textContent = ' ';
                 }, 5000);
-            } (error) => {alert(message?: any): void
+            },
+             (error) => { 
                 alert('OOPs! SOMETHING WENT WRONG...', error)
             }
         );
@@ -74,6 +75,8 @@ const sendEmail = (e) => {
         // clear input fields
 
         contactName.value = '';
+        contactEmail.value = '';
+        Message.value = '';
         
         };
 
